@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1 id="title">freeCodeCamp Survey Form</h1>
+    <p>Thank you for taking the time to help us improve the platform</p>
+    <form>
+      <fieldset>
+        <label for="name" id="name-label"
+          >Name:
+          <input id="name" type="text" placeholder="Enter your name" />
+        </label>
+        <label for="email" id="email-label"
+          >Email:
+          <input id="email" type="email" placeholder="Enter your email" />
+        </label>
+        <label for="number" id="number-label"
+          >Age:
+          <input id="number" type="number" placeholder="Enter your age" />
+        </label>
+      </fieldset>
+      <fieldset>
+        <label for="dropdownage"
+          >Which option best describes your current role?
+          <select id="dropdownage" name="role">
+            <option>(select an option)</option>
+            <option>student</option>
+            <option>Full time job</option>
+            <option>Full time learner</option>
+            <option>Prefer not to say</option>
+          </select>
+        </label>
+      </fieldset>
+      <fieldset>
+        <label for="definitely"
+          >Would you recommend freeCodeCamp to a friend?
+          <input
+            id="definitely"
+            type="radio"
+            name="check-group"
+            class="inline"
+          />Definetly
+        </label>
+        <label for="maybe">
+          <input
+            id="maybe"
+            type="radio"
+            name="check-group"
+            class="inline"
+          />Maybe
+        </label>
+        <label for="notsure">
+          <input
+            id="notsure"
+            type="radio"
+            name="check-group"
+            class="inline"
+          />Maybe
+        </label>
+      </fieldset>
+
+      <fieldset>
+        <label for="dropdownfav"
+          >What is your favorite feature of freeCodeCamp?
+          <select id="dropdownfav" name="role">
+            <option>(select an option)</option>
+            <option>Challenges</option>
+            <option>Projects</option>
+            <option>Community</option>
+            <option>Open Source</option>
+          </select>
+        </label>
+      </fieldset>
+
+      <label for="improve-group">
+        <input
+          id="frontend"
+          type="checkbox"
+          required
+          name="improve-group"
+          class="inline"
+        />
+        Front-end Projects
+      </label>
+
+      <label for="improve-group">
+        <input
+          id="backend"
+          type="checkbox"
+          required
+          name="improve-group"
+          class="inline"
+        />
+        Back-end Projects
+      </label>
+
+      <label for="improve-group">
+        <input
+          id="data"
+          type="checkbox"
+          required
+          name="improve-group"
+          class="inline"
+        />
+        Data Visualization
+      </label>
+
+      <label for="improve-group">
+        <input
+          id="challenges"
+          type="checkbox"
+          required
+          name="improve-group"
+          class="inline"
+        />
+        Challenges
+      </label>
+
+      <label for="improve-group">
+        <input
+          id="opensource"
+          type="checkbox"
+          required
+          name="improve-group"
+          class="inline"
+        />
+        Open Source Community
+      </label>
+
+      <label for="improve-group">
+        <input
+          id="gitter"
+          type="checkbox"
+          required
+          name="improve-group"
+          class="inline"
+        />
+        Gitter help rooms
+      </label>
+
+      <label for="improve-group">
+        <input
+          id="videos"
+          type="checkbox"
+          required
+          name="improve-group"
+          class="inline"
+        />
+        Videos
+      </label>
+
+      <label for="improve-group">
+        <input
+          id="meetup"
+          type="checkbox"
+          required
+          name="improve-group"
+          class="inline"
+        />
+        City Meetups
+      </label>
+
+      <label for="improve-group">
+        <input
+          id="wiki"
+          type="checkbox"
+          required
+          name="improve-group"
+          class="inline"
+        />
+        Wiki
+      </label>
+
+      <label for="improve-group">
+        <input
+          id="forum"
+          type="checkbox"
+          required
+          name="improve-group"
+          class="inline"
+        />
+        Forum
+      </label>
+
+      <label for="improve-group">
+        <input
+          id="addcourses"
+          type="checkbox"
+          required
+          name="improve-group"
+          class="inline"
+        />
+        Additional Courses
+      </label>
+    </form>
+  </body>
+</html>
