@@ -13,7 +13,7 @@ Technologies used:
 
 ## Authors
 
-- [ FreCodeCamp - link here ](https://www.freecodecamp.org/learn/2022/responsive-web-design/)
+- [ FreeCodeCamp - link here ](https://www.freecodecamp.org/learn/2022/responsive-web-design/)
 
 ## Demo
 
