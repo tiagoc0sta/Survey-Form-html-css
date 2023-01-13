@@ -7,26 +7,39 @@
   </head>
   <body>
     <h1 id="title">freeCodeCamp Survey Form</h1>
-    <p>Thank you for taking the time to help us improve the platform</p>
-    <form>
+    <p id="description">
+      Thank you for taking the time to help us improve the platform
+    </p>
+    <form id="survey-form">
       <fieldset>
         <label for="name" id="name-label"
           >Name:
-          <input id="name" type="text" placeholder="Enter your name" />
+          <input id="name" type="text" placeholder="Enter your name" required />
         </label>
         <label for="email" id="email-label"
           >Email:
-          <input id="email" type="email" placeholder="Enter your email" />
+          <input
+            id="email"
+            type="email"
+            placeholder="Enter your email"
+            required
+          />
         </label>
         <label for="number" id="number-label"
           >Age:
-          <input id="number" type="number" placeholder="Enter your age" />
+          <input
+            id="number"
+            type="number"
+            placeholder="Enter your age"
+            min="1"
+            max="5"
+          />
         </label>
       </fieldset>
       <fieldset>
-        <label for="dropdownage"
+        <label for="dropdown"
           >Which option best describes your current role?
-          <select id="dropdownage" name="role">
+          <select id="dropdown" name="role">
             <option>(select an option)</option>
             <option>student</option>
             <option>Full time job</option>
@@ -43,6 +56,7 @@
             type="radio"
             name="check-group"
             class="inline"
+            value="definetly"
           />Definetly
         </label>
         <label for="maybe">
@@ -51,6 +65,7 @@
             type="radio"
             name="check-group"
             class="inline"
+            value="maybe"
           />Maybe
         </label>
         <label for="notsure">
@@ -59,6 +74,7 @@
             type="radio"
             name="check-group"
             class="inline"
+            value="notsure"
           />Maybe
         </label>
       </fieldset>
@@ -83,6 +99,7 @@
           required
           name="improve-group"
           class="inline"
+          value="frontend"
         />
         Front-end Projects
       </label>
@@ -94,6 +111,7 @@
           required
           name="improve-group"
           class="inline"
+          value="backend"
         />
         Back-end Projects
       </label>
@@ -105,6 +123,7 @@
           required
           name="improve-group"
           class="inline"
+          value="data"
         />
         Data Visualization
       </label>
@@ -116,6 +135,7 @@
           required
           name="improve-group"
           class="inline"
+          value="challenges"
         />
         Challenges
       </label>
@@ -127,6 +147,7 @@
           required
           name="improve-group"
           class="inline"
+          value="open"
         />
         Open Source Community
       </label>
@@ -138,6 +159,7 @@
           required
           name="improve-group"
           class="inline"
+          value="gitter"
         />
         Gitter help rooms
       </label>
@@ -149,6 +171,7 @@
           required
           name="improve-group"
           class="inline"
+          value="videos"
         />
         Videos
       </label>
@@ -160,6 +183,7 @@
           required
           name="improve-group"
           class="inline"
+          value="meetup"
         />
         City Meetups
       </label>
@@ -171,6 +195,7 @@
           required
           name="improve-group"
           class="inline"
+          value="wiki"
         />
         Wiki
       </label>
@@ -182,6 +207,7 @@
           required
           name="improve-group"
           class="inline"
+          value="forum"
         />
         Forum
       </label>
@@ -193,6 +219,7 @@
           required
           name="improve-group"
           class="inline"
+          value="addcourses"
         />
         Additional Courses
       </label>
@@ -205,9 +232,12 @@
           rows="3"
           cols="30"
           placeholder="Enter your comment here..."
+          value="sugestions"
         >
         </textarea>
       </label>
+
+      <button id="submit" type="submit">Submit</button>
     </form>
   </body>
 </html>
