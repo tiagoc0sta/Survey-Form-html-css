@@ -8,6 +8,14 @@ body {
   font-size: 16px;
 }
 
+.hero-image {
+  background-image: url('https://images.unsplash.com/photo-1548092372-0d1bd40894a3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80');
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
+  height: 100%;
+}
+
 h1,
 p {
   margin: 1em auto;
@@ -19,11 +27,12 @@ p {
 }
 
 form {
-  width: 100%;
+  width: 90%;
   max-width: 800px;
   min-width: 300px;
   margin: 0 auto;
-  padding-bottom: 2em;
+  padding: 1em 2em;
+  background-color: #2b2a49;
 }
 
 fieldset {
